@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useRef, useState } from "react";
 
@@ -77,7 +76,6 @@ function App() {
     const newState = [...locationData?.[dragLocation]];
     const draggedItem = locationData[dragLocation][dragItem.current];
     newState.splice(dragItem.current, 1);
-    console.log(newState);
     setLocationData({
       ...locationData,
       [dragLocation]: [...newState],
