@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+.card {
+  border: 1px solid grey;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 8px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.status-button-wrapper {
   display: flex;
   flex-direction: column;
+  gap: 10px;
   align-items: center;
+}
+.card-generate-wrapper {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.status-button-wrapper span:nth-child(1) {
+  width: 2rem;
+  height: 2rem;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+.status-button-wrapper-0 span:nth-child(1) {
+  background: #d3d3d3;
+  color: grey;
 }
 
-.App-link {
-  color: #61dafb;
+.status-button-wrapper-1 span:nth-child(1) {
+  background: lightblue;
+  color: blue;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.status-button-wrapper-2 span:nth-child(1) {
+  background: lightgreen;
+  color: green;
+}
+.status-button-wrapper-3 span:nth-child(1) {
+  background: #d3d3d3;
+  color: grey;
+}
+.status-button-wrapper-4 span:nth-child(1) {
+  background: #d3d3d3;
+  color: grey;
+}
+.status-button-wrapper span:nth-child(2) {
+  font-size: 16px;
+  color: grey;
+  font-weight: 600;
+  cursor: pointer;
+}
+.card-generate-wrapper input {
+  outline: none;
+  border: 1px solid #d3d3d3;
+  background-color: white;
+  color: grey;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+.drop-container {
+  height: 20rem;
+  width: 20rem;
+}
+.App {
+  padding: 2rem;
+}
+.wrapper h3 {
+  text-align: center;
 }
